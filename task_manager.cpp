@@ -44,6 +44,8 @@ int main() {
             std::cout << "\n";
             break;
             
+            //to save vector <Task> tasks
+            //to save time I just decided to hardcode the save file directory, but in the future might add option to have multiple lists
             case 3:{
             /*
             std::cout<< "Task List Name: ";
@@ -69,11 +71,14 @@ int main() {
                 break;
 
             }
+
+            //For marking a task as completed
             case 4:{
+
                 int taskID;
                 std::string tempstr;
-                std::cout << "Completed task: ";
-                std::cin.ignore();
+                std::cout << "Completed task: "; 
+                std::cin.ignore();  //to ingnore selection input error
                 std::getline(std::cin, tempstr);
                 taskID = std::stoi(tempstr);
 

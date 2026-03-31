@@ -34,6 +34,8 @@ void LoadTasks(std::vector <Task> &tasks, const std::string filename){
 
     Task t;
 
+    //Because of how I intially saved the task vectors, I am using '|' as a delemiter, except for when chcking for the completed boolean
+    //we use the deafule '\\n' as the delemter for that becasue in the save for readiblity I chose to do a new line between vector <Task>s
     while (std::getline(file, line, '|'))
     {
         t.id = std::stoi(line);
